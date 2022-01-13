@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+<div class="'content">
+    <header>Predict Eligibility of Admission</header>
+</div>
+<div class="form">
+    <form action="/predict" method="POST">
+        <input type="number" name="gre_score" id="gre_score" placeholder="GRE Score">
+        <input type="number" name="toefl_score" id="toefl_score" placeholder="Toefl Score">
+        <input type="number" name="univ_rating" id="univ_rating" placeholder="University Rating">
+        <input type="number" name="sop" id="sop" placeholder="SOP">
+        <input type="number" name="lor" id="lor" placeholder="LOR">
+        <input type="number" name="cgpa" id="cgpa" placeholder="CGPA">
+        <select name="research" id="research">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <input type="submit" value="Predict">
+    </form>
+</div>
+</body>
+</html>
